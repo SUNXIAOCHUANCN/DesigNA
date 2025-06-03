@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计DNA</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="设计DNA">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">首页</a>
+            <a href="about.html">项目介绍</a>
+            <a href="partners.html">合作伙伴</a>
+            <a href="#questions">向我提问</a>
+        </div>
+    </nav>
+
+    <div id="fullpage">
+        <!-- 第一页：图片画廊 -->
+        <section class="section" id="home" style="background-image: url('images/gallery-bg.png');">
+            <div class="gallery-overlay-text" style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); z-index: 10; text-align: center; color: #fff; width: 100%;">
+                <h1 style="font-size: 3rem; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">DesigNA</h1>
+                <p style="font-size: 1.5rem; margin-top: 1rem; text-shadow: 1px 1px 6px rgba(0,0,0,0.4);">基于生成式人工智能的次世代设计工具</p>
+            </div>
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/hero1.jpg" alt="设计DNA展示1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/hero2.jpg" alt="设计DNA展示2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/hero3.jpg" alt="设计DNA展示3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- 第二页：项目展示 -->
+        <section class="section" id="features" style="background-image: url('images/project-bg.jpg');">
+            <div class="swiper project-swiper">
+                <div class="swiper-wrapper">
+                    <!-- 第一个项目 -->
+                    <div class="swiper-slide">
+                        <div class="content-wrapper">
+                            <div class="left-content">
+                                <div class="feature-image">
+                                    <img src="images/feature1.png" alt="意象分解器">
+                                </div>
+                            </div>
+                            <div class="feature-right-content">
+                                <h2>意象分解器</h2>
+                                <p>1、​​结构化解析​​：将自然元素（如蜂巢/雪花/珊瑚等）分解为可自由组合的元素</p>
+                                <p>2、​​元素组合​​：将分解后的元素进行自由组合，生成新的设计方案</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二个项目 -->
+                    <div class="swiper-slide">
+                        <div class="content-wrapper">
+                            <div class="left-content">
+                                <div class="feature-image">
+                                    <img src="images/feature2.png" alt="产品分解器">
+                                </div>
+                            </div>
+                            <div class="feature-right-content">
+                                <h2>产品分解器</h2>
+                                <p>将产品分解为可配置的角度，让设计不再没有抓手。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第三个项目 -->
+                    <div class="swiper-slide">
+                        <div class="content-wrapper">
+                            <div class="left-content">
+                                <div class="feature-image">
+                                    <img src="images/feature3.png" alt="线稿器和配色器">
+                                </div>
+                            </div>
+                            <div class="feature-right-content">
+                                <h2>线稿器和配色器</h2>
+                                <p>在生图时，提供先生成线稿、再生成上色图的选项，方便设计师进行预览，修改，并且更符合设计师的设计习惯</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第四个项目 -->
+                    <div class="swiper-slide">
+                        <div class="content-wrapper">
+                            <div class="left-content">
+                                <div class="feature-image">
+                                    <img src="images/feature4.png" alt="产品生成器">
+                                </div>
+                            </div>
+                            <div class="feature-right-content">
+                                <h2>产品生成器</h2>
+                                <p>生成时加入文本描述、选取修改、产品方案实时调整等功能，生成图片的过程更加灵活</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第五个项目 -->
+                    <div class="swiper-slide">
+                        <div class="content-wrapper">
+                            <div class="left-content">
+                                <div class="feature-image">
+                                    <img src="images/feature5.png" alt="可行性分析">
+                                </div>
+                            </div>
+                            <div class="feature-right-content">
+                                <h2>可行性分析</h2>
+                                <p>从物理支撑和生产实用性两个角度对产品进行分析，给出可行性建议。用户可以应用这些建议并返回修改。解决传统AI工具“不会物理”“天马行空”的问题</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination project-pagination"></div>
+            </div>
+        </section>
+
+        <!-- 第三页：视频展示 -->
+        <section class="section" id="gallery" style="background-image: url('images/video-bg.jpg');">
+            <div class="content-wrapper">
+                <h2 class="section-title">视频展示</h2>
+                <div class="video-container">
+                    <video controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四页：提问区域 -->
+        <section class="section" id="questions" style="background-image: url('images/question-bg.jpg');">
+            <div class="content-wrapper">
+                <div class="question-form">
+                    <h2 style="color: black;">向我提问</h2>
+                    <form id="questionForm">
+                        <input type="text" placeholder="您的称呼" required>
+                        <input type="email" placeholder="电子邮箱" required>
+                        <textarea placeholder="请输入您的问题" required></textarea>
+                        <button type="submit">提交问题</button>
+                    </form>
+                </div>
+                <div class="questions-history">
+                    <h3 style="color: black;">历史提问</h3>
+                    <div id="questionsList" class="questions-list">
+                        <!-- 提问历史将在这里动态显示 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

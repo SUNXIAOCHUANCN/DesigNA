@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合作伙伴 - 设计DNA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+    <style>
+        .fp-watermark {
+            display: none !important;
+        }
+        
+        #fp-nav.fp-right {
+            display: none !important;
+        }
+        </style>
+</head>
+<body class="partners-page">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="设计DNA">
+        </div>
+        <div class="nav-links">
+            <a href="mainpage.html">首页</a>
+            <a href="about.html">项目介绍</a>
+            <a href="partners.html" class="active">合作伙伴</a>
+            <a href="mainpage.html#questions">向我提问</a>
+        </div>
+    </nav>
+
+    <div id="fullpage">
+        <!-- 第一页：团队成员展示 -->
+        <section class="section" id="team" style="background-image: url('images/partners-bg.jpg');">
+        <h2>核心团队</h2>
+        <div class="team-members">
+            <div class="member-card" onclick="showMemberDetail(0)">
+                    <div class="member-card-front">
+                <div class="member-avatar">
+                    <img src="images/members/member1.jpg" alt="person1">
+                </div>
+                        <div class="member-info">
+                            <h3 style="color: var(--primary-color);">王康展</h3>
+                            <p style="color: #232526;">项目总监</p>
+                        </div>
+                    </div>
+                    <div class="member-card-back">
+                        <p>拥有6年设计经验，多次担任项目负责人，负责项目整体规划和设计和项目开发。</p>
+                    </div>
+            </div>
+            <div class="member-card" onclick="showMemberDetail(1)">
+                    <div class="member-card-front">
+                <div class="member-avatar">
+                    <img src="images/members/member2.jpg" alt="person2">
+                </div>
+                        <div class="member-info">
+                            <h3 style="color: var(--primary-color);">黄俊荣</h3>
+                            <p style="color: #232526;">浪子肥三少</p>
+                        </div>
+                    </div>
+                    <div class="member-card-back">
+                        <p>浪子肥三少，性疏狂而善交游，纵马江湖间颇谙人情脉络。尝执折扇笑谈中调度群豪，凭机敏斡旋解难于瞬息，虽行事不羁却每能遂愿，江湖道上皆称其有孟尝之风、子房之智。</p>
+                    </div>
+            </div>
+            <div class="member-card" onclick="showMemberDetail(2)">
+                    <div class="member-card-front">
+                <div class="member-avatar">
+                    <img src="images/members/member3.jpg" alt="person3">
+                </div>
+                        <div class="member-info">
+                            <h3 style="color: var(--primary-color);">刘景天</h3>
+                            <p style="color: #232526;">产品总监</p>
+            </div>
+        </div>
+                    <div class="member-card-back">
+                        <p>产品总监，擅长客户体验体系搭建与全流程优化。聚焦用户需求洞察与体验升级，通过跨部门协作提升服务质量，以数据驱动决策打造差异化体验，兼具战略视野与落地执行能力。</p>
+            </div>
+        </div>
+    </div>
+        </section>
+
+        <!-- 第二页：用户评价 -->
+        <section class="section" id="testimonials" style="background-image: url('images/testimonials-bg.jpg');">
+            <div class="testimonials-container">
+                <h2>用户评价</h2>
+                <div class="testimonial-users">
+                    <div class="testimonial-user" onclick="showTestimonial(0)">
+                        <img src="images/users/user1.jpg" alt="用户1">
+                        <button class="testimonial-btn">查看ta的评价</button>
+                    </div>
+                    <div class="testimonial-user" onclick="showTestimonial(1)">
+                        <img src="images/users/user2.jpg" alt="用户2">
+                        <button class="testimonial-btn">查看ta的评价</button>
+                    </div>
+                    <div class="testimonial-user" onclick="showTestimonial(2)">
+                        <img src="images/users/user3.jpg" alt="用户3">
+                        <button class="testimonial-btn">查看ta的评价</button>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-text" id="testimonial-0">
+                        <p>DesigNA 的出现对家居设计流程具有颠覆性意义。它生成的方案在空间规划和风格融合上展现出惊人的专业度，极大提升了我的初期构思效率。其算法对复杂需求和限制条件的理解精准度远超同类工具，真正释放了设计师的精力去深化创意与细节。这款工具无疑将成为设计工作室未来不可或缺的核心竞争力。</p>
+                    </div>
+                    <div class="testimonial-text" id="testimonial-1">
+                        <p>DesigNA 对我们学生帮助太大了。以前课本上的设计概念有点抽象，用它实际操作后立刻变得直观清晰。界面很友好，几步就能生成不错的效果，大大提高了做设计作业的效率。最棒的是它能即时给出建议，就像随时有个经验丰富的帮手，让我学得更快更扎实，绝对是学习阶段的实用伙伴。</p>
+                    </div>
+                    <div class="testimonial-text" id="testimonial-2">
+                        <p>作为一名长期合作的客户，我见证了DesigNA团队的成长。他们始终保持创新精神，每次都能带来惊喜。团队的专业素养和敬业精神值得信赖。他们的每一次更新，都给AI领域带来新的变革。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三页：动态雷达图 -->
+        <section class="section" id="radar" style="background: linear-gradient(135deg, #232526 0%, #414345 100%);">
+            <div class="radar-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <h2 style="color: #fff; margin-bottom: 2rem;">与竞品对比</h2>
+                <canvas id="radarChart" width="500" height="400" style="max-width: 90vw; max-height: 60vh;"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <!-- 成员详情弹窗 -->
+    <div class="member-modal" id="memberModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeMemberDetail()">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="" id="modalAvatar">
+                <div class="modal-info">
+                    <h3 id="modalName"></h3>
+                    <p id="modalTitle"></p>
+                    <div class="description" id="modalDescription"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
+    <script src="partners.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var ctx = document.getElementById('radarChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'radar',
+          data: {
+            labels: ['操作效率', '生成质量', '转化能力', '修改便捷性', '用户满意度'],
+            datasets: [
+              {
+                label: 'DesigNA',
+                data: [3.71, 4.00, 4.57, 4.07, 4.00],
+                backgroundColor: 'rgba(0,191,166,0.3)',
+                borderColor: 'rgba(0,191,166,1)',
+                pointBackgroundColor: 'rgba(0,191,166,1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(0,191,166,1)'
+              },
+              {
+                label: 'doubao',
+                data: [3.29, 3.21, 3.29, 2.86, 2.93],
+                backgroundColor: 'rgba(255,152,0,0.3)',
+                borderColor: 'rgba(255,152,0,1)',
+                pointBackgroundColor: 'rgba(255,152,0,1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(255,152,0,1)'
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                labels: {
+                  color: '#fff',
+                  font: { size: 16 }
+                }
+              }
+            },
+            scales: {
+              r: {
+                angleLines: { color: '#aaa' },
+                grid: { color: '#888' },
+                pointLabels: { color: '#fff', font: { size: 16 } },
+                min: 0,
+                max: 5,
+                ticks: {
+                  color: '#fff',
+                  stepSize: 1,
+                  font: { size: 14 }
+                }
+              }
+            }
+          }
+        });
+      });
+    </script>
+</body>
+</html> 

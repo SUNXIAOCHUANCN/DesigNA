@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目介绍 - 设计DNA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+</head>
+<body class="about-page">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="设计DNA">
+        </div>
+        <div class="nav-links">
+            <a href="mainpage.html">首页</a>
+            <a href="about.html" class="active">项目介绍</a>
+            <a href="partners.html">合作伙伴</a>
+            <a href="mainpage.html#questions">向我提问</a>
+        </div>
+    </nav>
+
+    <div id="fullpage">
+        <!-- 第一页：主KV图 -->
+        <section class="section" id="about-hero" style="background-image: url('images/abouthero.jpg');">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <h2>AI设计工具的新变革</h2>
+                    <p>我们对设计师和设计从事者群体进行了大量的调研。发现了当下AI设计工具的新问题。并给出我们的解决方案</p>
+                    <button class="feature-btn" onclick="showFeature('introduction')">查看问题</button>
+                </div>
+                <div class="right-content" id="introduction-content">
+                    <p>1.黑箱化：难以控制的生图过程</p>
+                    <p>2.天马行空：生成的产品可行性难以验证</p>
+                    <p>3.概念转化难：初始的生图文本完全由设计师输入，无法提供灵感帮助</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 第二页：创新思维 -->
+        <section class="section" id="innovation" style="background-image: url('images/bg1.png');">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <h2>AI产出过程解构</h2>
+                    <button class="feature-btn" onclick="showFeature('innovation')">了解更多</button>
+                </div>
+                <div class="right-content" id="innovation-content">
+                    <p>我们将AI的产出流程解构。在DesigNA中，AI从“要求->结果”的传统流程变化成“要求->初步结果->次步结果->最终结果”。以家居设计为例：在DesigNA中，我们提供了多个模块。通过不同模块之间的交互，你可以控制AI的生成。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三页：专业团队 -->
+        <section class="section" id="team" style="background-image: url('images/bg2.png');">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <h2>加入后验模型</h2>
+                    <button class="feature-btn" onclick="showFeature('team')">了解更多</button>
+                </div>
+                <div class="right-content" id="team-content">
+                    <p>从物理支撑和生产实用性两个角度对产品进行分析，给出可行性建议。用户可以应用这些建议并返回修改。解决传统AI工具“不会物理”“天马行空”的问题</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四页：品质保证 -->
+        <section class="section" id="quality" style="background-image: url('images/bg3.png');">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <h2>AI辅助灵感生成</h2>
+                    <button class="feature-btn" onclick="showFeature('quality')">了解更多</button>
+                </div>
+                <div class="right-content" id="quality-content">
+                    <p>1、​​结构化解析​​：将自然元素（如蜂巢/雪花/珊瑚等）分解为可自由组合的元素2、 </p>
+                    <p>2、​​跨维度组合​​：允许用户混合不同自然系统的特征（如蜂巢结构+枫叶色彩+水波纹理）</p>
+                </div>
+            </div>
+            <div class="copyright-info" style="position: absolute; bottom: 20px; text-align: center; width: 100%; color: #ffffff;">
+                <p>Copyright © 2024 DesigNA. All rights reserved.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DesigNA. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.js"></script>
+    <script src="about.js"></script>
+</body>
+</html> 
